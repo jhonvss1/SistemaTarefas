@@ -7,7 +7,6 @@ namespace SistemaTarefas.Repositorios.Interfaces
     public class UsuarioRepositorio : IUsuarioRepositorio
     {
         private readonly SistemaTarefasDbContext _dbcontext;
-
         public UsuarioRepositorio(SistemaTarefasDbContext sistemaTarefasDbContext)
         {
             _dbcontext = sistemaTarefasDbContext;

@@ -2,6 +2,7 @@
 using Microsoft.EntityFrameworkCore;
 using Microsoft.EntityFrameworkCore.Infrastructure;
 using Microsoft.EntityFrameworkCore.Metadata;
+using Microsoft.EntityFrameworkCore.Migrations;
 using Microsoft.EntityFrameworkCore.Storage.ValueConversion;
 using SistemaTarefas.Data;
 
@@ -10,9 +11,11 @@ using SistemaTarefas.Data;
 namespace SistemaTarefas.Migrations
 {
     [DbContext(typeof(SistemaTarefasDbContext))]
-    partial class SistemaTarefasDbContextModelSnapshot : ModelSnapshot
+    [Migration("20241125172724_VinculoTarefaUsuario")]
+    partial class VinculoTarefaUsuario
     {
-        protected override void BuildModel(ModelBuilder modelBuilder)
+        /// <inheritdoc />
+        protected override void BuildTargetModel(ModelBuilder modelBuilder)
         {
 #pragma warning disable 612, 618
             modelBuilder
